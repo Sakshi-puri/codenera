@@ -1,0 +1,205 @@
+@charset "ISO-8859-1";
+
+/*
+form start
+*/
+
+ body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+.container {
+        width: 80%;
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+    }
+     textarea, input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        resize: vertical; /* Allows vertical resizing of textareas */
+    }
+
+    textarea {
+        resize: vertical;
+    }
+    .submit-button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        align-self: center;
+        transition: background-color 0.3s ease;
+    }
+
+    .submit-button:hover {
+        background-color: #45a049;
+    }
+    
+    
+    /*
+
+category start
+*/
+
+.message {
+        color: red;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+     /*
+
+title start
+*/
+ .data-item {
+            margin-bottom: 15px;
+        }
+        .data-item label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .data-item p {
+            margin: 0;
+        }
+        
+     /*
+
+display start
+*/  
+.navbar {
+        width: 100%;
+        padding: 15px;
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0 15px;
+    }
+     .navbar a:hover {
+        background-color: #575757;
+        border-radius: 5px;
+    }
+
+    .navbar input[type="text"] {
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+
+    .navbar input[type="text"]:focus {
+        outline: none;
+    } 
+    .categories {
+        width: 200px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-right: 1px solid #ccc;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 70px; /* Adjusted to account for the navbar */
+        bottom: 0;
+        overflow-y: auto;
+    }
+     .main-content {
+    flex-grow: 1;
+    margin-left: 220px;
+    margin-right: 220px; /* Space for the right sidebar */
+    margin-top: 70px; /* Adjusted to account for the navbar */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+ .sidebar {
+        width: 200px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-left: 1px solid #ccc;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 70px; /* Adjusted to account for the navbar */
+        bottom: 0;
+        right: 0;
+        overflow-y: auto;
+    }
+
+    .categories h1, .sidebar h1 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .categories h4, .sidebar h1 {
+        margin: 10px 0;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .categories h4:hover, .sidebar h1:hover {
+        background-color: #d0d0d0;
+    } 
+        
+    
+    
